@@ -205,3 +205,174 @@ footer a:hover{
     text-decoration: 1px underline;
     
 }
+
+
+
+/* Media */
+
+@media (max-width: 350px) {
+    .nav{
+        display: flex;
+        height: 40px;
+        float: right;
+        margin-right: 10px;
+        margin-top: 5px;
+    }
+
+    .nav-1{
+        width: 100%;
+        height: 45px;
+        
+    }
+
+    .nav{
+        display: flex;
+        height: 40px;
+        float: right;
+        margin-right: 10px;
+        margin-top: 10px;
+    }
+   
+    .nav a{
+        font-size: 11px;
+    }
+    .nav a:hover{
+        text-decoration: underline;
+    } 
+    .gl-img{
+        margin-right: 10px;
+    }
+    
+    .icon{
+        margin: 2px;
+    }
+    .icon-2{
+       margin-top: 8px;
+    }
+    
+    .nav .material-symbols-outlined{
+        color: rgb(112, 107, 107);
+        font-size: 24px;
+        padding: 5px;
+        cursor: pointer;
+        /* margin: 1px; */
+        
+    }
+    
+    .nav .material-symbols-outlined:hover{
+        background-color: rgb(240, 240, 240);
+        border-radius: 30px;
+    }
+
+    .nav .btn-1{
+        width: 57px;
+        height: 30px;
+        background-color: #1A73E8;
+        border: none;
+        outline: none;
+        color: white;
+        border-radius: 3px;
+        font-size: 12px;
+        cursor: pointer;
+    }
+
+
+    .middle img{
+        margin-top: 21px;
+        width: 170px;
+        height: 62px;
+       
+    }
+
+    .middle-1{
+        border: 1px solid rgb(211, 211, 211);
+        width: 300px;
+        height: 33px;
+        border-radius: 30px;
+        margin: auto;
+    }
+
+    .middle-1 .div img{
+        width: 23px;
+        height: 23px;
+        margin: auto;
+        margin-right: 5px;
+        cursor: pointer;
+    }
+    .div input{
+    width: 180px;
+    height: 30px;
+    margin-right: 15px;
+    border: none;
+    outline: none;
+    }
+    .div span{
+        font-size: 18px;
+        padding: 4px;
+        margin-right: 10px;
+        color: rgb(161, 159, 159);
+        cursor: pointer;
+    }
+
+    .btns button{
+        display: none;
+    }
+
+
+    .language{
+        display: block;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .language p{
+        font-size: 12px;
+        padding: 5px;
+        color: #4D5156;
+        margin-bottom: 8px;
+    
+    
+    }
+    .language a{
+        margin: 10px;
+        font-size: 10px;
+        line-height: 2.5;
+    }
+
+    .ind p{
+        margin-top: 125px;
+        padding: 5px;
+        margin-left: 10px;
+        font-size: 15px;
+        color: #70757A;
+    }
+
+    footer{
+        display: block;
+        text-align: center;
+        line-height: 1.5;
+        background-color:#ededed;
+
+    }
+    .foot-1{
+      display: inline-block;
+    }
+    .hsw{
+        display: none;
+    }
+    .foot-1 a{
+        font-size: 12px;
+        color: #70757A;
+        margin: 30px;
+    }
+    .foot-2{
+        float: none;
+        text-align: center;
+    }
+    .foot-2 a{
+        margin: 20px;
+        color: #70757A;
+    }
+
+
+}
