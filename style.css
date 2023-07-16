@@ -210,7 +210,7 @@ footer a:hover{
 
 /* Media */
 
-@media (max-width: 350px) {
+@media (max-width: 600px) {
     .nav{
         display: flex;
         height: 40px;
