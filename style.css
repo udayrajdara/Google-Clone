@@ -293,6 +293,10 @@ footer a:hover{
         margin: auto;
     }
 
+    .middle-1:hover{
+        box-shadow: none;
+    }
+
     .middle-1 .div img{
         width: 25px;
         height: 25px;
