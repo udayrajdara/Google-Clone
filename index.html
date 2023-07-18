@@ -46,10 +46,10 @@
 			<abbr title="search"><input type="text" name="search" id="search-bar"></abbr>
 			</div>
 			<div class="div">
-				<abbr title="Search by voice"><img src="./7611756.png" alt=""></abbr>
+				<abbr title="Search by voice"><img onclick="record()" src="./7611756.png" alt="Voice" id="voice"></abbr>
 			</div>
 			<div class="div">
-				<abbr title="Search by image"><img src="./unnamed.png" alt=""></abbr>
+				<abbr title="Search by image"><img src="./unnamed.png" alt="Image" id="capture"></abbr>
 			</div>
 		</div>
 	</div>
@@ -99,7 +99,32 @@
 	</footer>
 </div>
 
+<script>
 
+	// var video = document.getElementById('image')
+
+	// function trig(){
+	// 	navigator.mediaDevices.getUserMedia({
+	// 		audio: false,
+	// 		video: true
+	// 	}).then(capture =>{
+
+	// 	}).catch(console.error)
+	// }
+
+	// window.addEventListener('load', startup, false );
+
+
+
+	function record(){
+		var recognition = new webkitSpeechRecognition();
+		recognition.lang = "en-GB";
+		recognition.onresult = function(event){
+			document.getElementById('search-bar').value=event.results[0][0].transcript;
+		}
+		recognition.start();
+	}
+</script>
 
 </body>
 </html>
