@@ -38,19 +38,22 @@
 			<img src="./googlelogo_color_272x92dp.png" alt="Google">
 
 			<div class="middle-1">
+				<div class="gcse-searchbox-only"></div>
+
 			<div class="md-2">
-			<div class="div">
-			<span class="material-symbols-outlined">search</span>
+
+			<!-- <div class="div">
+			<span class="material-symbols-outlined search-it">search</span>
 			</div>
-			<div class="div">
-			<abbr title="search"><input type="text" name="search" id="search-bar"></abbr>
+			<div class="div gcse-search">
+			<abbr title="search"><input type="text" onclick="google()" placeholder="Search here..." name="search" id="search-bar"></abbr>
 			</div>
 			<div class="div">
 				<abbr title="Search by voice"><img onclick="record()" src="./7611756.png" alt="Voice" id="voice"></abbr>
 			</div>
 			<div class="div">
 				<abbr title="Search by image"><img src="./unnamed.png" alt="Image" id="capture"></abbr>
-			</div>
+			</div> -->
 		</div>
 	</div>
 	</div>
@@ -61,6 +64,10 @@
 			<button>Google Search</button>
 			<button onclick="doodle=location.href='https://www.google.com/doodles'">I'm Feeling Lucky</button>
 		</div>
+
+		<script async src="https://cse.google.com/cse.js?cx=b2a92e52fba1246e5">
+		</script>
+		<div class="gcse-searchresults-only"></div>
 
 	</div>
 
@@ -99,21 +106,12 @@
 	</footer>
 </div>
 
+
+<!-- <script async src="https://cse.google.com/cse.js?cx=b2a92e52fba1246e5">
+</script> -->
+<script async src="https://cse.google.com/cse.js?cx=b2a92e52fba1246e5">
+</script>
 <script>
-
-	// var video = document.getElementById('image')
-
-	// function trig(){
-	// 	navigator.mediaDevices.getUserMedia({
-	// 		audio: false,
-	// 		video: true
-	// 	}).then(capture =>{
-
-	// 	}).catch(console.error)
-	// }
-
-	// window.addEventListener('load', startup, false );
-
 
 
 	function record(){
@@ -124,6 +122,20 @@
 		}
 		recognition.start();
 	}
+
+// const API = 'AIzaSyB3TsFG7Q23rPXmcEMR56Vc39p7hobgJhU'
+
+// const input = document.getElementById('search-bar')
+// const enter = document.getElementsByClassName('search-it')
+
+// enter.addEventListener('click', function(e){
+// 	e.preventDefault()
+
+// 	loc = input.value
+//         url = `https://cse.google.com/cse?cx=b2a92e52fba1246e5#gsc.tab=0`
+//         fetch(url).then(res => res.json()).then(data => {console.log(data)})
+// })
+
 </script>
 
 </body>
